@@ -1,0 +1,125 @@
+
+.gridContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+	gap: 10px;
+	padding: 10px;
+}
+.gridChild {  
+	border: 2px solid black;
+	padding: 10px;
+	border-radius: 10px;
+}
+#wabbleGrid {
+	grid-column: 1 / span 2;
+	grid-row: 1;
+	border: 0px;
+	text-align: center;
+	margin: auto;
+}
+#gameStatusGrid {
+	grid-column: 3 / span 2;
+	grid-row: 1;
+}
+#scoresGrid {
+	grid-column: 5 / span 2;
+	grid-row: 1;
+}
+#tileRacksGrid {
+	grid-column: 1 / span 2;
+	grid-row: 2;
+}
+#playGrid {
+	grid-column: 1 / span 2;
+	grid-row: 3;
+}
+#wordBoardGrid {
+	grid-column: 3 / span 4;
+		grid-row: 2 / span 2;
+}
+.colsDiv {
+ 	column-count: 2;
+ 	column-gap: 20px;
+  	column-fill: auto;
+}
+.currPlayer1 {
+	color: #087273;
+	font-weight: bold;
+}
+.currPlayer2 {
+	color: #087273;
+	font-weight: bold;
+}
+.tileRack {
+ 	height: 40px;
+}
+.tile {
+	background-color: #D2AB7A;
+	border: 0.1px solid #916f44;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	text-align: center;
+	vertical-align: center;
+	position: relative;
+	display: inline-block;
+}
+.tileLetter {
+   	font-weight: 200;
+   	font-size: 14pt;
+   	position: absolute;
+   	top: 2px;
+   	left: 6px;
+}
+.tilePoints {
+   	font-weight: 100;
+   	font-size: 7pt;
+	position: absolute;
+	top: 17px;
+	right: 3px;
+}
+#wordBoard {
+	background-color: #92d1d1;
+	border-radius: 10px;
+	padding: 10px;
+	height: 410px;
+}
+#wordInput {
+	border: 1px solid black;
+	padding: 10px 20px;
+	padding-left: 5px;
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 14px;
+}
+#finishTurn {
+	background-color: #087273;
+	border: 2px solid #087273;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	display: inline-block;
+	font-size: 14px;
+}
+#reset {
+	background-color: white;
+	border: 2px solid #087273;
+	border-radius: 5px;
+	color: #087273;
+	padding: 10px 20px;
+	text-align: center;
+	display: inline-block;
+	font-size: 14px;
+}
+#error {
+	color: red;
+	font-style: italic;
+	height: 10px;
+}
+h2 {
+	color: #782630	;
+}
+* {
+ 	font-family: Arial;
+}

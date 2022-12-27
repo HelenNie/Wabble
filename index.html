@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Waddle</title>
+	
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<div class="gridContainer">
+	 	<div class="gridChild" id="wabbleGrid">
+	 		<h1>WABBLE</h1>
+	 		<p>A 2-player anagram word game</p>
+	 	</div>
+	    <div class="gridChild" id="gameStatusGrid">
+	        <h2>STATUS</h2>
+	        <p>Current Turn: <span class="currPlayer1" id="currPlayer"></span></p>
+	        <p>Tiles Remaining: <span id="numTilesRemaining"></span></p>
+	    </div>
+
+	    <div class="gridChild" id="scoresGrid">
+	        <h2>SCORES</h2>
+	        <p><span class="p1Name"></span>: <span id="p1Score"></span></p>
+	        <p><span class="p2Name"></span>: <span id="p2Score"></span></p>
+	    </div>
+
+		<div class="gridChild" id="tileRacksGrid">
+	    	<h2>TILE RACKS</h2>
+	        <p><span class="p1Name"></span>:</p>
+	        <div class="tileRack" id="p1TileRack"></div>
+	        <br>
+	        <p><span class="p2Name"></span>:</p>
+	        <div class="tileRack" id="p2TileRack"></div>
+	     </div>
+
+	     <div class="gridChild" id="playGrid">
+	     	<br>
+	        <label for="wordInput">Word:</label>
+  			<input type="text" id="wordInput" name="wordInput" placeholder="Press 'Enter' to submit">
+  			<br>
+			<p id="error"></p>
+  			<br>
+  			<input type="submit" class="button" id="finishTurn" value="Finish Turn">
+  			<input type="submit" class="button" id="reset" value="Reset Game">
+	    </div>
+
+		<div class="gridChild" id="wordBoardGrid">
+			<h2>WORD BOARD</h2>
+			<div class="colsDiv" id="wordBoard">
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
